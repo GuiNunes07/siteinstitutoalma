@@ -46,6 +46,7 @@ app.get('/', (req, res) => {
     res.send('API do Instituto funcionando!');
 });
 
+app.use(cors({ origin: "https://institutoalma-bca3ewgchpgjb3dx.brazilsouth-01.azurewebsites.net" }));
 
 // --- Iniciar o Servidor ---
 app.listen(port, () => {
